@@ -1,0 +1,9 @@
+# This docker file was meant to be used in the build process of a angular 2, 3, ... application.
+# It is going to update the system, install curl, nodejs, npm and the angular cli.
+# If you want something different just add or remove it from the RUN instruction.
+
+FROM ubuntu:xenial
+
+RUN apt update && apt install -y curl && curl -sL https://deb.nodesource.com/setup_6.x | bash - && apt-get install -y nodejs
+
+RUN npm install -g @angular/cli
