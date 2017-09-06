@@ -8,6 +8,7 @@ The guide will walk you through the implementation of a continuos integration an
 If you feel read move the Wiki pages, there we will start the process step by step. Good Luck!
 
 ### The general resources that will be used are:
+
 #### Elastic Container (EC2)
 > It will be used to run our application.
 
@@ -21,7 +22,7 @@ If you feel read move the Wiki pages, there we will start the process step by st
 > It will build our code. It means that the code build will get our last committed code, run the necessary build steps and save the build artifacts (files to be served) in to S3.
 
 #### Code Deploy
-> It will get the built code that is saved to S3 and put it inside our EC2 instances to be served by apache or nginx.
+> It will get the built code that was saved to S3 and put it inside our EC2 instances to be served by apache or nginx.
 
 #### Code Pipeline
 > It will automate all the process for us. If we don't use it we will have to do the build and deploy commands manually.
